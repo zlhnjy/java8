@@ -75,7 +75,7 @@ public class StreamTest {
         int sum = Arrays.stream(numbers).sum();
         System.out.println(sum);
 
-        long wordCount = 0;
+        long wordCount;
         try {
             File file = ResourceUtils.getFile("classpath:a.txt");
             Stream<String> lines = Files.lines(Paths.get(file.getPath()));
